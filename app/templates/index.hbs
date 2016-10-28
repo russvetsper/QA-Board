@@ -4,11 +4,11 @@ You have questions?..... We got answers!!
 
 <ul>
   {{#each model as |board|}}
-    {{board-tile board=board destroyBoard="destroyBoard"}}
+    {{board-tile board=board update="update" destroyBoard="destroyBoard"}}
   {{/each}}
-
-{{new-board saveBoard="saveBoard"}}
 </ul>
 
+{{new-board saveBoard="saveBoard"}}
+<br>
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}contact us.{{/link-to}}

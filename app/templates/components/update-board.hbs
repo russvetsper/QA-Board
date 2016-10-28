@@ -1,0 +1,16 @@
+{{#if updateBoardForm}}
+  <h4>Update {{board.question}}'s {{rental.type}}</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="question">question</label>
+        {{input value=question id="question" placeholder=board.question}}
+      </div>
+
+
+      <button {{action 'update' board}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateBoardForm'}}>Update</button>
+{{/if}}

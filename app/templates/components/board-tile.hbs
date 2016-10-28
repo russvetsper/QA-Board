@@ -1,4 +1,9 @@
-<li>{{board.author}}: <br> {{board.question}}
-  
+<li>AUTHOR: {{board.author}}:
+  <br>
+  <br>
+  QUESTION:  {{board.question}}:
+  <br>
+  <br>
+    {{update-board board=board update="update"}}
     <button {{action 'delete' board}}>Delete</button>
 </li>
