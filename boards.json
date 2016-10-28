@@ -1,0 +1,14 @@
+{ "boards": [{
+    "author": "joe",
+    "question": "how are you",
+    "answer": "fine"
+  }, {
+    "author": "Mike ",
+    "question": "hows it going",
+    "answer": "well"
+  }, {
+    "author": "Violet ",
+    "question": "what color is this",
+    "answer": "blue"
+  }]
+}
