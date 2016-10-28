@@ -1,14 +1,11 @@
 <h1>Welcome to Q&A Board</h1>
 
-You have questions?..... We have answers!!
+You have questions?..... We got answers!!
 
 <ul>
   {{#each model as |board|}}
-    <li>{{board.author}}'s
-        {{board.question}}
-        {{board.answer}}
-    </li>
-  {{/each}}  
+    {{board-tile board=board}}
+  {{/each}}
 </ul>
 
 

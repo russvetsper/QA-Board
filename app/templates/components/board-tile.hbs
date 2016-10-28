@@ -1,0 +1,10 @@
+<li>{{board.author}}: <br> {{board.question}}
+  {{#if isAnswerShowing }}
+    <p>
+      {{board.answer}}
+    </p>
+  {{else}}
+  <br>
+    <button {{action 'answerShow'}}> View Answer</button>
+    {{/if}}
+</li>
