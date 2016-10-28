@@ -5,8 +5,11 @@ export default Ember.Component.extend({
   actions: {
     answerShow: function() {
       this.set('isAnswerShowing', true);
+    },
+    delete(board) {
+      if (confirm('delete this board?')) {
+        this.sendAction('destroyBoard', board);
+      }
     }
   }
-
-
 });
