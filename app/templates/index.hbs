@@ -6,8 +6,9 @@ You have questions?..... We got answers!!
   {{#each model as |board|}}
     {{board-tile board=board destroyBoard="destroyBoard"}}
   {{/each}}
-</ul>
 
+{{new-board saveBoard="saveBoard"}}
+</ul>
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}contact us.{{/link-to}}
