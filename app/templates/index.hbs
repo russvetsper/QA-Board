@@ -2,6 +2,15 @@
 
 You have questions?..... We have answers!!
 
+<ul>
+  {{#each model as |board|}}
+    <li>{{board.author}}'s
+        {{board.question}}
+        {{board.answer}}
+    </li>
+  {{/each}}  
+</ul>
+
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}contact us.{{/link-to}}
