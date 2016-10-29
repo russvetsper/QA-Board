@@ -1,9 +1,10 @@
-<li>AUTHOR: {{board.author}}:
+<li>
+  {{#link-to 'board' board.id}}AUTHOR: {{board.author}}:
   <br>
   <br>
   QUESTION:  {{board.question}}:
+  {{/link-to}}
   <br>
   <br>
-    {{update-board board=board update="update"}}
-    <button {{action 'delete' board}}>Delete</button>
+
 </li>
