@@ -10,7 +10,8 @@ export default Ember.Component.extend({
     saveBoard() {
       var params = {
         author: this.get('author'),
-        question: this.get('question')
+        question: this.get('question'),
+        note: this.get('note'),
 
       };
       this.set('addNewBoard', false);
