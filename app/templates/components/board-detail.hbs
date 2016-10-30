@@ -1,8 +1,14 @@
 <h1>{{board.author}}'s question:</h1>
-<br> 
+<br>
 {{board.question}}
 
 <br>
 
+<h2> Answer </h2>
+<ul>
+  {{#each board.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
 
 <button {{action 'delete' board}}>Delete</button>

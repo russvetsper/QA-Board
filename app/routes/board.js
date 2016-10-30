@@ -17,6 +17,16 @@ export default Ember.Route.extend({
     destroyRental(board) {
       board.destroyRecord();
       this.transitionTo('index');
+    },
+
+    saveAnswer(params) {
+      var newAnswer = this.store.createRecord('answer', params);
+      var board = params.board;
+      board.get('answers').addObject(newAnswer);
+      newAnswer.save().then(function() {
+        return board.save();
+      });
+      this.transitionTo('board', board);
     }
   }
 });
