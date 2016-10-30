@@ -12,6 +12,9 @@ export default Ember.Component.extend({
         author: this.get('author'),
         question: this.get('question'),
         note: this.get('note'),
+        answer: this.get('answer')
+
+
 
       };
       this.set('addNewBoard', false);
