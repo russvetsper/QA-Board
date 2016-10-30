@@ -10,5 +10,14 @@
     "author": "Violet ",
     "question": "what color is this",
     "note": "maybe"
+  }],
+
+  "answers": [{
+    "author": "Andrea",
+    "answer": "not nice"
+
+  }, {
+    "author": "Alex",
+    "answer": "nice"
   }]
 }
