@@ -13,6 +13,11 @@ export default Ember.Route.extend({
      var newBoard = this.store.createRecord('board', params);
      newBoard.save();
      this.transitionTo('index');
+   },
+   saveAnswer(params) {
+     var newAnswer = this.store.createRecord('answer', params);
+     newAnswer.save();
+     this.transitionTo('index');
    }
   }
 });
