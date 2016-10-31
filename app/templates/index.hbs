@@ -1,10 +1,13 @@
 
 
 <h1>You have questions?..... We got answers!!</h1>
+<br>
+<br>
 
 <ul>
   {{#each model.board as |board|}}
     {{board-tile board=board}}
+    <hr>
   {{/each}}
 </ul>
 
