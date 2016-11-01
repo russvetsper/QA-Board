@@ -1,7 +1,13 @@
 {{#if updateBoardForm}}
-  <h4>Update {{board.question}} {{board.note}}</h4>
+  <h4>Update  {{board.question}} {{board.note}}</h4>
   <div>
     <form>
+
+      <div class="form-group">
+        <label for="author">author</label>
+        {{input value=author id="author" placeholder=board.author}}
+      </div>
+
       <div class="form-group">
         <label for="question">question</label>
         {{input value=question id="question" placeholder=board.question}}

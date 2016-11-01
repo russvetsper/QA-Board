@@ -11,8 +11,8 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         question: this.get('question'),
-        note: this.get('note'),
-        answer: this.get('answer')
+        note: this.get('note')
+
 
 
 
