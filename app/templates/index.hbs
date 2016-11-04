@@ -6,7 +6,7 @@
 
 <ul>
   {{#each model.board as |board|}}
-  {{answer-popularity answer}}  {{board-tile board=board}}
+  {{board-popularity board}}  {{board-tile board=board}}
     <hr>
   {{/each}}
 </ul>
