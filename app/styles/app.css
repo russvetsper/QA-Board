@@ -1,109 +1,84 @@
-.jumbotron {
-  color: white;
-  background-color: black;
-  margin-top: -20px;
 
+
+h1 {
+  text-align: center;;
+  font-weight: bold;
   font-family: cursive;
+  color: black;
 }
 
 
+ h2 {
+   font-weight: bold;
+  font-family: cursive;
+  color: black;
+}
+.box {
+  font-weight: bold;
+  text-align: center;
+  font-family: cursive;
+  color: white;
+  font-size: 1.5em;
+  border: 3px solid black;
+  background-color: darkblue;
+  width: 300px;
+  height: 300px;
+    margin: auto;
 
-@import "bourbon";
+}
 
-$color_purple: #5133AB;
-$color_red: #AC193D;
-$color_orange: #DC572E;
-$color_green: #00A600;
-$color_blue: #2672EC;
+a {
+  color: white;
 
-// colors from http://www.creepyed.com/2012/09/windows-8-colors-hex-code/
 
-$base_font_size: 14px;
-$base_line_height: 1.5em;
-$text_font_family: 'Open Sans', "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-$display_font_family: 'Open Sans', "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.glyphicon {
+  color: red;
+  font-size: 10em;
+
+
+}
+
+
 
 body {
-	font-family: $text_font_family;
-	font-size: $base_font_size;
-	line-height: $base_line_height;
-	font-weight: 400;
+  background-attachment: fixed;
+background-position: center;
+  background-size: cover;
+    background-image: url("http://cdn1.itpro.co.uk/sites/itpro/files/images/dir_215/it_photo_107887.jpg");
+    opacity: 0.7;
+    filter: alpha(opacity=10);
+
+}
+button {
+
+  color: white;
+  font-family: cursive;
+  background-color: green;
+  opacity: 2.0;
+  filter: alpha(opacity=10);
+  border-radius: 25px;
+  border: 1px solid green;
+  padding: 12px 28px;
+
 }
 
-p, span, a, ul, li, button {
-	font-family: inherit;
-	font-size: inherit;
-	font-weight: inherit;
-	line-height: inherit;
+p {
+  color: black;
+  font-weight: bold;
 }
 
-strong {
-	font-weight: 600;
-}
+.answer {
+  font-weight: bold;
+  text-align: center;
+  font-family: cursive;
+  color: white;
+  font-size: 1.5em;
+  border: 3px solid black;
+  background-color: darkblue;
+  width: 300px;
+  height: 300px;
+    margin: auto;
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: $display_font_family;
-	line-height: $base_line_height;
-	font-weight: 300;
-}
-
-strong {
-  font-weight: 400;
-}
-
-.tile {
-  width: 100%;
-	display: inline-block;
-	box-sizing: border-box;
-	background: #fff;
-	padding: 20px;
-	margin-bottom: 30px;
-
-  .title {
-		margin-top: 0px;
-	}
-
-  &.purple, &.blue, &.red, &.orange, &.green {
-    color: #fff;
-  }
-
-  &.purple {
-    background: $color_purple;
-
-		&:hover {
-			background: darken($color_purple, 10%);
-		}
-  }
-
-  &.red {
-    background: $color_red;
-
-		&:hover {
-			background: darken($color_red, 10%);
-		}
-  }
-
-  &.green {
-    background: $color_green;
-
-		&:hover {
-			background: darken($color_green, 10%);
-		}
-  }
-
-  &.blue {
-    background: $color_blue;
-
-		&:hover {
-			background: darken($color_blue, 10%);
-		}
-  }
-
-  &.orange {
-    background: $color_orange;
-
-		&:hover {
-			background: darken($color_orange, 10%);
-		}
-  }
 }

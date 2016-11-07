@@ -1,11 +1,15 @@
 
 
 
-<li>
+<li class="box">
   {{#link-to 'board' board.id}}AUTHOR: {{board.author}}:
+  <hr>
+  
   <br>
+  QUESTION:
   <br>
-  QUESTION:  {{board.question}}:
+   {{board.question}}
+  <br>
   <br>
   NOTES: {{board.note}}
   {{/link-to}}

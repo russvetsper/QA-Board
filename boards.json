@@ -14,10 +14,12 @@
 
   "answers": [{
     "author": "Andrea",
-    "answer": "not nice"
+    "answer": "not nice",
+    "rating": 4
 
   }, {
     "author": "Alex",
-    "answer": "nice"
+    "answer": "nice",
+    "rating": 4
   }]
 }

@@ -7,13 +7,14 @@ export default Ember.Component.extend({
       this.set('addNewAnswer', true);
     },
     saveAnswer() {
-     var params = {
-       author: this.get('author'),
-       answer: parseInt(this.get('answer')),
-       board: this.get('board')
-     };
-     this.set('addNewAnswer', false);
-     this.sendAction('saveAnswer', params);
-   }
+      var params = {
+        author: this.get('author'),
+        rating: parseInt(this.get('rating')),
+        answer: this.get('answer'),
+        board: this.get('board')
+      };
+      this.set('addNewAnswer', false);
+      this.sendAction('saveAnswer', params);
+    }
   }
 });

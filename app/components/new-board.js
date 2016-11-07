@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         question: this.get('question'),
         note: this.get('note')
 
-
+        
 
 
       };

@@ -1,13 +1,15 @@
 
 
-<h1>You have questions?..... We got answers!!</h1>
+
 <br>
 <br>
 
 <ul>
   {{#each model.board as |board|}}
   {{board-popularity board}}  {{board-tile board=board}}
-    <hr>
+  <button {{action 'addToFavorites' board}}>Add To Favorites</button>
+  <br>
+  <hr>
   {{/each}}
 </ul>
 

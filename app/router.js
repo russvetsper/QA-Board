@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('board', {path: '/board/:board_id'});
+  this.route('favorites');
 });
 
 export default Router;

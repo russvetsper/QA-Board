@@ -7,11 +7,11 @@ export default Ember.Component.extend({
       this.set('updateBoardForm', true);
     },
     update(board) {
-     var params = {
-       author: this.get('author'),
-       question: this.get('question'),
-       note: this.get('note'),
-     };
+      var params = {
+        author: this.get('author'),
+        question: this.get('question'),
+        note: this.get('note'),
+      };
 
       this.set('updateBoardForm', false);
       this.sendAction('update', board, params);
