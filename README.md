@@ -1,7 +1,9 @@
 # Qa-board
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
+This App allows a user to ask questions and have other users answer questions. Each question will have an up or down arrow signifying popularity of the question based on how many answers that question received. This App also allows a user to add a question to the favorite list.
+
 
 ## Prerequisites
 
